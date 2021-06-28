@@ -1,4 +1,4 @@
-<h1><img src="booklist.jpg" alt="Single Page App" width="20%"></h1>
+<h1><img src="maps.jpg" alt="Single Page App" width="20%"></h1>
 
 
 # Tic-Tak-Toe Project
@@ -12,7 +12,7 @@ A basic project to create a single page app with linking as well as incorporatin
 
 ### Features
 
-* A listing of books with details from each respective book.
+* A listing of countries with details from each respective country.
 * Links that are navigated to by using single page application techniques.
 
 ## Installation
@@ -29,15 +29,18 @@ To do this complete the following steps:
 - To quit the application you can use `Ctrl + c`
 
 ### Expected outcomes:
-A listing of books for easy access.
+A listing of stats per country for easy access.
 
 ## Support
 
-If by some unexpected circumstance the books stop booking, please get hold of me at gman.international@gmail.com and I will make it all right again.
+If by some unexpected circumstance the countries disappear, please get hold of me at gman.international@gmail.com and I will make it all right again.
 
 ## Roadmap of Future Improvements
 
-- Same functionality but different data to be pulled.
+- Same functionality with more relevant data to be pulled.
+- Inclusion of search for the main page
+- Inclusion of links to each country on Google Maps
+- Inclusion of images of each country
 
 ## Versioning
 

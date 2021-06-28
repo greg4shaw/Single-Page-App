@@ -1,10 +1,26 @@
+// Router function for SPA
+
+async function loadPage(){
+    console.log(location.hash);
+    let page      = location.hash.replace('#', '');
+    const res     = await fetch(page);
+    const content = await res.text();
+    const element = document.getElementById('root');
+    element.innerHTML = content;
+};            
+
+window.addEventListener('hashchange', loadPage);    
+  
+// React component for loading data
+
 function App(){
     const [data, setData] = React.useState(null);        
     const [loaded, setLoaded] = React.useState(false);
 
     React.useEffect(() => {
         async function getData() {
-            const response = await fetch('./books.json');
+            //const response = await fetch('./books.json');
+            const response = await fetch('./world.json');
             const json     = await response.json();
             setData(json);
             setLoaded(true);
@@ -15,8 +31,7 @@ function App(){
 
     return (<>
         <div className="container">
-            <h1>React Components</h1>    
-            {loaded && data.books.map((book,i) => <Book data={book} key={i}/>)}
+            {loaded && data.country.map((cnt,i) => <Country data={cnt} key={i}/>)}
         </div>        
     </>);   
 }

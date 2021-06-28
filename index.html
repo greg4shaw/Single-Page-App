@@ -15,15 +15,43 @@
   </head>
   <body>
 
-    <!-- we will put our teact component inside this div -->
+    
+<!-- ------------------ NAVBAR ------------------ -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Countries of the World</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Listing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#other.html">Other</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+</div>
+<br>
+
+
+    <!-- we will put our React component inside this div -->
     <div id="root"></div>
+    <!-- <div id="content"></div> -->
 
     <!-- load react -->
     <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
 
     <!-- load our react component. -->
-    <script src="books.js" defer type="text/babel"></script>    
+    <script src="country.js" defer type="text/babel"></script>    
     <script src="index.js" defer type="text/babel"></script>
 
 
